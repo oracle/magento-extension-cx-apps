@@ -1,0 +1,326 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  release-project:
+    name: "Release static zip to Github Releases"
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Add HTTP basic auth credentials
+        run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
+
+      - name: Install dependencies
+        uses: php-actions/composer@v6
+        with:
+          php_version: 7.4
+          version: 2
+
+      - name: print the repo name
+        run: echo ${{ github.repository }}
+
+      - name: Generate version
+        run: |
+          set +o pipefail
+          export VERSION="unknown"
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          echo "RELEASE_ENV=${{ needs.build.outputs.releaseEnv }}" >> $GITHUB_ENV
+          echo "VERSION=${{ needs.build.outputs.version }}" >> $GITHUB_ENV
+          echo "Printing the env name"
+          env
+          git status
+          echo "Printing env.RELEASE_ENV name"
+          echo $RELEASE_ENV
+          echo env.RELEASE_ENV
+      - name: Download site Content
+        if: ${{ env.RELEASE_ENV == 'prod' }}
+        uses: actions/download-artifact@v2
+        with:
+          name: magento-extension
+      - name: Create Github Release
+        if: ${{ env.RELEASE_ENV == 'prod' }}
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ env.VERSION }}
+          release_name: Release ${{ env.VERSION }}
+          draft: false
+          prerelease: false
+      - name: Upload Release Asset oracle-magento-module-all
+        if: ${{ env.RELEASE_ENV == 'prod' }}
+        id: upload-release-asset-oracle-magento-module-all
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/oracle-magento-module-all-${{ env.VERSION }}.zip
+          asset_name: oracle-magento-module-all-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset oracle-magento-module-browse
+        if: ${{ env.RELEASE_ENV == 'prod' }}
+        id: upload-release-asset-oracle-magento-module-browse
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/oracle-magento-module-browse-${{ env.VERSION }}.zip
+          asset_name: oracle-magento-module-browse-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset oracle-magento-module-cart
+        if: ${{ env.RELEASE_ENV == 'prod' }}
+        id: upload-release-asset-oracle-magento-module-cart
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/oracle-magento-module-cart-${{ env.VERSION }}.zip
+          asset_name: oracle-magento-module-cart-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset oracle-magento-module-connector
+        if: ${{ env.RELEASE_ENV == 'prod' }}
+        id: upload-release-asset-oracle-magento-module-connector
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/oracle-magento-module-connector-${{ env.VERSION }}.zip
+          asset_name: oracle-magento-module-connector-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset oracle-magento-module-contact
+        if: ${{ env.RELEASE_ENV == 'prod' }}
+        id: upload-release-asset-oracle-magento-module-contact
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/oracle-magento-module-contact-${{ env.VERSION }}.zip
+          asset_name: oracle-magento-module-contact-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset oracle-magento-module-coupon
+        if: ${{ env.RELEASE_ENV == 'prod' }}
+        id: upload-release-asset-oracle-magento-module-coupon
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/oracle-magento-module-coupon-${{ env.VERSION }}.zip
+          asset_name: oracle-magento-module-coupon-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset oracle-magento-module-email
+        if: ${{ env.RELEASE_ENV == 'prod' }}
+        id: upload-release-asset-oracle-magento-module-email
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/oracle-magento-module-email-${{ env.VERSION }}.zip
+          asset_name: oracle-magento-module-email-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset oracle-magento-module-enterprise
+        if: ${{ env.RELEASE_ENV == 'prod' }}
+        id: upload-release-asset-oracle-magento-module-enterprise
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/oracle-magento-module-enterprise-${{ env.VERSION }}.zip
+          asset_name: oracle-magento-module-enterprise-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset oracle-magento-module-integration
+        if: ${{ env.RELEASE_ENV == 'prod' }}
+        id: upload-release-asset-oracle-magento-module-integration
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/oracle-magento-module-integration-${{ env.VERSION }}.zip
+          asset_name: oracle-magento-module-integration-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset oracle-magento-module-inventory
+        if: ${{ env.RELEASE_ENV == 'prod' }}
+        id: upload-release-asset-oracle-magento-module-inventory
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/oracle-magento-module-inventory-${{ env.VERSION }}.zip
+          asset_name: oracle-magento-module-inventory-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset oracle-magento-module-m2
+        if: ${{ env.RELEASE_ENV == 'prod' }}
+        id: upload-release-asset-oracle-magento-module-m2
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/oracle-magento-module-m2-${{ env.VERSION }}.zip
+          asset_name: oracle-magento-module-m2-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset oracle-magento-module-notification
+        if: ${{ env.RELEASE_ENV == 'prod' }}
+        id: upload-release-asset-oracle-magento-module-notification
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/oracle-magento-module-notification-${{ env.VERSION }}.zip
+          asset_name: oracle-magento-module-notification-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset oracle-magento-module-optin
+        if: ${{ env.RELEASE_ENV == 'prod' }}
+        id: upload-release-asset-oracle-magento-module-optin
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/oracle-magento-module-optin-${{ env.VERSION }}.zip
+          asset_name: oracle-magento-module-optin-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset oracle-magento-module-order
+        if: ${{ env.RELEASE_ENV == 'prod' }}
+        id: upload-release-asset-oracle-magento-module-order
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/oracle-magento-module-order-${{ env.VERSION }}.zip
+          asset_name: oracle-magento-module-order-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset oracle-magento-module-product
+        if: ${{ env.RELEASE_ENV == 'prod' }}
+        id: upload-release-asset-oracle-magento-module-product
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/oracle-magento-module-product-${{ env.VERSION }}.zip
+          asset_name: oracle-magento-module-product-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset oracle-magento-module-rating
+        if: ${{ env.RELEASE_ENV == 'prod' }}
+        id: upload-release-asset-oracle-magento-module-rating
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/oracle-magento-module-rating-${{ env.VERSION }}.zip
+          asset_name: oracle-magento-module-rating-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset oracle-magento-module-redemption
+        if: ${{ env.RELEASE_ENV == 'prod' }}
+        id: upload-release-asset-oracle-magento-module-redemption
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/${{ env.VERSION }}/oracle-magento-module-redemption-${{ env.VERSION }}.zip
+          asset_name: oracle-magento-module-redemption-${{ env.VERSION }}.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset package json
+        if: ${{ env.RELEASE_ENV == 'prod' }}
+        id: upload-release-asset-package-json
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./pod2/packages.json
+          asset_name: packages.json
+          asset_content_type: application/json
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    outputs:
+      releaseEnv: ${{ steps.gen_release_meta.outputs.releaseEnv }}
+      version: ${{ steps.gen_release_meta.outputs.version }}
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Add HTTP basic auth credentials
+        run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
+
+      - name: Install dependencies
+        uses: php-actions/composer@v6
+        with:
+          php_version: 7.4
+          version: 2
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: php -v
+
+      - name: Generate version
+        id: gen_release_meta
+        run: |
+          php ci/gen-version.php  > ./version
+          ls
+          set +o pipefail
+          export VERSION="unknown"
+          [ -f ./version ] && export VERSION=$(cat ./version)
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          [ -f ./environment ] && export RELEASE_ENV=$(cat ./environment)
+          echo "RELEASE_ENV=RELEASE_ENV" >> $GITHUB_ENV
+
+          echo "::set-output name=releaseEnv::$RELEASE_ENV"
+          echo "::set-output name=version::$VERSION"
+          echo "*******"
+          rm ./environment
+
+      - name: Execute build steps
+        run:  php ci/build.php --environment prod --version $VERSION
+
+      - name: Check the build version
+        run: cd builds/ && ls
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: magento-extension
+          path: ./builds/ # or path/to/artifact
+
+      - name: Remove auth.json file
+        run: rm -f $GITHUB_WORKSPACE/auth.json

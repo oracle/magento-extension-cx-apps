@@ -9,7 +9,6 @@ auth.json
 .project
 .buildpath
 .settings
-.github/
 .htaccess
 .htaccess.sample
 .php_cs.dist

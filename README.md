@@ -10,7 +10,7 @@ extension.
 Oracle Responsys, so you must have a Responsys account to do the setup.
 
 ## Quick start
-1. Clone this respository ```git clone https://github.com/oracle/magento-oracle-cx-apps```
+1. Clone this respository ```git clone https://github.com/oracle/magento-extension-cx-apps```
 2. Run this command to build the deliverable out of this project. 
    ```php ci/build.php --environment prod --version ${your version}```
 3. You can publish this deliverable to use via composer, or you can use this with 
@@ -33,7 +33,7 @@ Array format:
 ```json
   "repositories": [{     
                  "type": "composer",     
-                 "url":  "{cdn-placeholder-url}"      
+                 "url":  "https://raw.githubusercontent.com/oracle/magento-extension-cx-apps/main/packages.json"      
    }]        
 ```
 
@@ -43,7 +43,7 @@ JSON Object Format:
     "repositories": {     
          "oracle": {    
              "type": "composer",     
-             "url": "{cdn-placeholder-url}"
+             "url": "https://raw.githubusercontent.com/oracle/magento-extension-cx-apps/main/packages.json"
          }    
     }  
 ```
