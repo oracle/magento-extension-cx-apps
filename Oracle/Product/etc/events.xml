@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="oracle_connector_queue_product_transform">
+        <observer name="oracle_connector_queue_product_transform_handle" instance="Oracle\Product\Model\Observer\AfterTransformEventObserver" />
+    </event>
+    <event name="oracle_product_extra_fields">
+        <observer name="oracle_product_extra_fields_handle" instance="Oracle\Product\Model\Observer\AfterSetExtraFieldsObserver" />
+    </event>
+    <event name="oracle_product_default_fields">
+        <observer name="oracle_product_default_fields_handle" instance="Oracle\Product\Model\Observer\AfterSetDefaultFieldsObserver" />
+    </event>
+    <event name="oracle_product_custom_fields">
+        <observer name="oracle_product_custom_fields_handle" instance="Oracle\Product\Model\Observer\AfterSetCustomFieldsObserver" />
+    </event>
+    <event name="oracle_product_attribute_fields">
+        <observer name="oracle_product_attribute_fields_handle" instance="Oracle\Product\Model\Observer\AfterSetAttributeFieldsObserver" />
+    </event>
+    <event name="oracle_connector_gather_endpoints">
+        <observer name="oracle_product_gather_endpoints" instance="Oracle\Product\Model\Observer\AfterGatherEndpointsObserver" />
+    </event>
+    <event name="oracle_connector_product_endpoint">
+        <observer name="oracle_product_gather_endpoint" instance="Oracle\Product\Model\Observer\AfterEndpointInfoObserver" />
+    </event>
+    <event name="oracle_connector_advanced_endpoint_additional">
+        <observer name="oracle_product_advanced_import" instance="Oracle\Product\Model\Observer\AfterAdvancedAdditionalObserver" />
+    </event>
+    <event name="oracle_connector_script_product_historical">
+        <observer name="oracle_connector_script_product_historical" instance="Oracle\Product\Model\Observer\AfterHistoricalImportObserver" />
+    </event>
+    <event name="oracle_connector_script_product_test">
+        <observer name="oracle_connector_script_product_test" instance="Oracle\Product\Model\Observer\AfterTestImportObserver" />
+    </event>
+    <event name="oracle_connector_script_product_event">
+        <observer name="oracle_connector_script_product_event_handle" instance="Oracle\Product\Model\Observer\AfterSendProductUpdatesObserver" />
+    </event>
+    <event name="catalog_product_save_after">
+        <observer name="Oracle_Product::pushProduct" instance="Oracle\Product\Model\Observer\AfterCatalogProductSaveObserver" />
+    </event>
+    <event name="catalog_product_delete_after_done">
+        <observer name="Oracle_Product::deleteProduct" instance="Oracle\Product\Model\Observer\AfterCatalogProductDeleteObserver" />
+    </event>
+</config>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="oracle_connector_gather_endpoints">
+        <observer name="oracle_coupon_gather_endpoints" instance="Oracle\Coupon\Observer\AfterGatherEndpointsObserver" />
+    </event>
+    <event name="oracle_connector_coupon_endpoint">
+        <observer name="oracle_coupon_gather_endpoint" instance="Oracle\Coupon\Observer\AfterEndpointInfoObserver" />
+    </event>
+    <event name="oracle_connector_advanced_endpoint_additional">
+        <observer name="oracle_coupon_advanced_import" instance="Oracle\Coupon\Observer\AfterAdvancedAdditionalObserver" />
+    </event>
+    <event name="oracle_connector_redirect_coupon">
+        <observer name="oracle_coupon_apply_coupon" instance="Oracle\Coupon\Observer\AfterRedirectCouponObserver" />
+    </event>
+    <event name="checkout_cart_add_product_complete">
+        <observer name="oracle_coupon_apply_quote" instance="Oracle\Coupon\Observer\AfterApplyCodeOnQuoteObserver" />
+    </event>
+    <event name="oracle_connector_source_coupon_code">
+        <observer name="oracle_coupon_source_coupon" instance="Oracle\Coupon\Observer\AfterPullSpecificCouponObserver" />
+    </event>
+    <event name="oracle_connector_source_coupon_pool">
+        <observer name="oracle_coupon_source_coupon_pool" instance="Oracle\Coupon\Observer\AfterPullCouponPoolsObserver" />
+    </event>
+    <event name="oracle_connector_trigger_flush">
+        <observer name="oracle_coupon_trigger_flush_handle" instance="Oracle\Coupon\Observer\AfterTriggerReplenishObserver" />
+    </event>
+    <event name="oracle_connector_script_coupon_historical">
+        <observer name="oracle_connector_script_coupon_historical_handle" instance="Oracle\Coupon\Observer\AfterHistoricalImportObserver" />
+    </event>
+    <event name="oracle_connector_script_coupon_event">
+        <observer name="oracle_connector_script_coupon_event_handle" instance="Oracle\Coupon\Observer\AfterReplenishCouponsObserver" />
+    </event>
+    <event name="oracle_email_message_extras">
+        <observer name="oracle_coupon_email_extras" instance="Oracle\Coupon\Observer\AfterMessageExtrasObserver" />
+    </event>
+    <event name="oracle_email_template_filter">
+        <observer name="oracle_coupon_email_template_filter" instance="Oracle\Coupon\Observer\AfterTemplateFilterObserver" />
+    </event>
+</config>

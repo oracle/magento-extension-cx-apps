@@ -1,0 +1,14 @@
+{
+  "latestVersion": "0.0.1",
+  "releases": {
+      "0.0.1": {
+          "message": "The Oracle Connector Extension v0.0.1 is available! Initial Features include:",
+          "notes": [
+              "Modules related to import, and export magento record to Responsys",
+              "Event driven infrastructure to flush the magento event to Responsys"
+          ],
+          "severity": 1,
+          "pubDate": "2022-02-14 00:00:00"
+      }
+  }
+}

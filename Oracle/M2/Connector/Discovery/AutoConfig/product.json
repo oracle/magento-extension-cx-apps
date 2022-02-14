@@ -1,0 +1,28 @@
+{
+  "settings": {
+    "enabled": true,
+    "categoryFormat": "urlKey",
+    "categoryDelimiter": "space",
+    "categoryBranchDelimiter": ",",
+    "categorySpecificity": "lowest"
+  },
+  "default_fields": {
+    "product_id": "sku",
+    "parent_product_id": "parent_product_id",
+    "product_category": "product_category",
+    "price": "price",
+    "sale_price": "special_price",
+    "product_url": "product_url",
+    "image_url": "image",
+    "title": "name",
+    "description": "description",
+    "Sale_Price_Effective_End_Date": "special_to_date",
+    "Sale_Price_Effective_Start_Date": "special_from_date",
+    "average_rating": "avg_rating",
+    "review_count": "review_cnt",
+    "quantity": "qty",
+    "color": "color",
+    "availability": "is_in_stock",
+    "gender": "gender"
+  }
+}

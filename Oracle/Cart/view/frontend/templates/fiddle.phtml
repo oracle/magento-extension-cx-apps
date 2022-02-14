@@ -1,0 +1,10 @@
+<div class="block block-cart-fiddle" data-bind="scope: 'cart-fiddle'" data-role="cart-fiddle" style="display: none;">
+    <div data-bind="cartFiddleBinding: cartFiddle()"></div>
+</div>
+<script type="text/x-magento-init">
+{
+  "[data-role=cart-fiddle]": {
+    "Magento_Ui/js/core/app": <?php echo $block->getJsLayout();?>
+  }
+}
+</script>

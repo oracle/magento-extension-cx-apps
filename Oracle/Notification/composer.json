@@ -1,0 +1,21 @@
+{
+    "name": "oracle/magento-module-notification",
+    "description": "Oracle Extension for Magento - Notification Module",
+    "type": "magento2-module",
+    "license": [
+        "UPL-1.0"
+    ],
+    "require": {
+        "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+        "oracle/magento-module-connector": "0.0.1"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Oracle\\Notification\\": ""
+        }
+    },
+    "version": "0.0.1"
+}

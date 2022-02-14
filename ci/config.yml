@@ -1,0 +1,7 @@
+cdn_urls:
+    stg: "https://github.com/kumarmanishbit/composer-test/releases/download"
+    prod: "https://github.com/kumarmanishbit/composer-test/releases/download"
+
+paths:
+    build: "builds"
+    module: "Oracle"

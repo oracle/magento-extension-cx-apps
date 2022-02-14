@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="oracle_connector_queue_order_transform">
+        <observer name="oracle_connector_queue_order_transform_handle" instance="Oracle\Order\Observer\AfterTransformEventObserver" />
+    </event>
+    <event name="oracle_connector_gather_endpoints">
+        <observer name="oracle_order_gather_endpoints" instance="Oracle\Order\Observer\AfterGatherEndpointsObserver" />
+    </event>
+    <event name="oracle_connector_order_endpoint">
+        <observer name="oracle_order_gather_endpoint" instance="Oracle\Order\Observer\AfterEndpointInfoObserver" />
+    </event>
+    <event name="oracle_connector_advanced_endpoint_additional">
+        <observer name="oracle_order_advanced_import" instance="Oracle\Order\Observer\AfterAdvancedAdditionalObserver" />
+    </event>
+    <event name="oracle_connector_script_order_historical">
+        <observer name="oracle_connector_script_order_historical" instance="Oracle\Order\Observer\AfterHistoricalImportObserver" />
+    </event>
+    <event name="oracle_connector_script_order_test">
+        <observer name="oracle_connector_script_order_test" instance="Oracle\Order\Observer\AfterTestImportObserver" />
+    </event>
+    <event name="sales_order_save_after">
+        <observer name="Oracle_Order::pushOrder" instance="Oracle\Order\Observer\AfterOrderSaveObserver" />
+    </event>
+    <event name="sales_order_place_after">
+        <observer name="oracle_order_delete_tid" instance="Oracle\Order\Observer\AfterOrderPlacedObserver" />
+    </event>
+    <event name="oracle_email_template_filter">
+        <observer name="oracle_order_email_template_filter" instance="Oracle\Order\Observer\AfterTemplateFilterObserver" />
+    </event>
+</config>

@@ -1,0 +1,23 @@
+{
+    "name": "oracle/magento-module-email",
+    "description": "Oracle Extension for Magento - Email Module",
+    "type": "magento2-module",
+    "license": [
+        "UPL-1.0"
+    ],
+    "require": {
+        "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+        "magento/module-email": "^100|^101",
+        "oracle/magento-module-connector": "0.0.1",
+        "zendframework/zend-mail": ">=2.4"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Oracle\\Email\\": ""
+        }
+    },
+    "version": "0.0.1"
+}

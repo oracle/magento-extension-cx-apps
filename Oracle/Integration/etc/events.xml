@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="oracle_connector_gather_endpoints">
+        <observer name="oracle_integration_gather_endpoints" instance="Oracle\Integration\Observer\AfterGatherEndpointsObserver" />
+    </event>
+    <event name="oracle_connector_integration_endpoint">
+        <observer name="oracle_integration_gather_endpoint" instance="Oracle\Integration\Observer\AfterEndpointInfoObserver" />
+    </event>
+</config>

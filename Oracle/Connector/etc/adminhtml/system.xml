@@ -1,0 +1,20 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+  <system>
+    <tab id="oracle_connector_tab" translate="label" sortOrder="1000">
+      <label>Responsys Connector</label>
+    </tab>
+    <section id="oracle_local" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+      <label>General</label>
+      <tab>oracle_connector_tab</tab>
+      <resource>Oracle_Connector::config_general</resource>
+      <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+        <label>General</label>
+        <field id="custom_url" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
+          <label>Custom URL</label>
+          <comment>For use when proxying requests to the admin server inside a private network. Please re-sync all registrations after saving. Example URL: http://www.example.com.</comment>
+          <validate>validate-oracle-custom-url</validate>
+        </field>
+      </group>
+    </section>
+  </system>
+</config>

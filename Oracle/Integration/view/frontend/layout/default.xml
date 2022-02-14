@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+  <body>
+    <referenceContainer name="page.bottom">
+      <block
+        class="Oracle\Integration\Block\Popup"
+        name="oracle_integration_popup"
+        template="Oracle_Integration::popup.phtml" />
+      <block
+        class="Oracle\Integration\Block\ScriptManager"
+        name="oracle_integration_script_manager"
+        template="Oracle_Integration::script-manager.phtml" />
+    </referenceContainer>
+  </body>
+</page>

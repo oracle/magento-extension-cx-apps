@@ -1,0 +1,12 @@
+<?php if ($block->isCartRecoveryEnabled()) : ?>
+<script type="text/x-magento-init">
+{
+  "*": {
+    "Oracle_Cart/js/capture": {
+      "captureUrl": "<?php echo $block->escapeHtml($block->getCaptureUrl()); ?>",
+      "selectors": "<?php echo $block->getCartRecoverySelectors(); ?>"
+    }
+  }
+}
+</script>
+<?php endif; ?>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="oracle_connector_gather_endpoints">
+        <observer name="oracle_email_gather_endpoints" instance="Oracle\Email\Observer\AfterGatherEndpointsObserver" />
+    </event>
+    <event name="oracle_connector_email_endpoint">
+        <observer name="oracle_email_gather_endpoint" instance="Oracle\Email\Observer\AfterEndpointInfoObserver" />
+    </event>
+    <event name="oracle_connector_advanced_endpoint_additional">
+        <observer name="oracle_email_advanced_import" instance="Oracle\Email\Observer\AfterAdvancedAdditionalObserver" />
+    </event>
+    <event name="oracle_connector_script_email_test">
+        <observer name="oracle_connector_script_email_test" instance="Oracle\Email\Observer\AfterTestImportObserver" />
+    </event>
+    <event name="oracle_connector_script_email_historical">
+        <observer name="oracle_connector_script_email_historical" instance="Oracle\Email\Observer\AfterHistoricalImportObserver" />
+    </event>
+    <event name="oracle_connector_trigger_flush">
+        <observer name="oracle_connector_script_email_trigger_flush" instance="Oracle\Email\Observer\AfterTriggerFlushObserver" />
+    </event>
+    <event name="oracle_connector_script_email_event">
+        <observer name="oracle_connector_script_email_event_handle" instance="Oracle\Email\Observer\AfterFlushMessagesObserver" />
+    </event>
+    <event name="oracle_connector_queue_delivery_transform">
+        <observer name="oracle_email_queue_delivery_transform" instance="Oracle\Email\Observer\AfterTransformEventObserver" />
+    </event>
+    <event name="oracle_email_setting_sync_after">
+        <observer name="oracle_email_setting_sync_after" instance="Oracle\Email\Observer\AfterSettingSyncObserver" />
+    </event>
+    <event name="wishlist_save_after">
+        <observer name="oracle_email_wishlist_save_after" instance="Oracle\Email\Observer\Trigger\AfterWishlistSaveObserver" />
+    </event>
+    <event name="wishlist_delete_after">
+        <observer name="oracle_email_wishlist_delete_after" instance="Oracle\Email\Observer\Trigger\AfterWishlistDeleteObserver" />
+    </event>
+    <event name="sales_model_service_quote_submit_success">
+        <observer name="oracle_email_quote_submitted" instance="Oracle\Email\Observer\Trigger\AfterQuoteSaveObserver" />
+        <observer name="oracle_email_order_placed" instance="Oracle\Email\Observer\Trigger\AfterOrderSaveObserver" />
+    </event>
+    <event name="sales_quote_delete_after">
+        <observer name="oracle_email_quote_delete_after" instance="Oracle\Email\Observer\Trigger\AfterQuoteDeleteObserver" />
+    </event>
+    <event name="sales_order_save_after">
+        <observer name="oracle_email_order_save_after" instance="Oracle\Email\Observer\Trigger\AfterOrderSaveObserver" />
+    </event>
+    <event name="sales_order_delete_after">
+        <observer name="oracle_email_order_delete_after" instance="Oracle\Email\Observer\Trigger\AfterOrderDeleteObserver" />
+    </event>
+    <event name="oracle_connector_redirect_email">
+        <observer name="oracle_email_redirect_path" instance="Oracle\Email\Observer\AfterRedirectPathObserver" />
+    </event>
+</config>

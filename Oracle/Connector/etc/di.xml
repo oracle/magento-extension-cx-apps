@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+  <preference for="Oracle\M2\Connector\QueueManagerInterface" type="Oracle\Connector\Impl\Connector\Queue"/>
+  <preference for="Oracle\M2\Connector\RegistrationManagerInterface" type="Oracle\Connector\Impl\Connector\RegistrationManager"/>
+  <preference for="Oracle\Connector\Api\TidRepositoryInterface" type="Oracle\Connector\Model\TidRepository"/>
+  <preference for="Oracle\Connector\Model\Spi\TidResourceInterface" type="Oracle\Connector\Model\ResourceModel\Tid"/>
+</config>

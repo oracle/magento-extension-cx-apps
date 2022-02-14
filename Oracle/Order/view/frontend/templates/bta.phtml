@@ -1,0 +1,10 @@
+<div class="block block-bta" data-bind="scope: 'bta'" data-role="bta" style="display: none;">
+    <div data-bind="btaBinding: bta()"></div>
+</div>
+<script type="text/x-magento-init">
+    {
+        "[data-role=bta]": {
+            "Magento_Ui/js/core/app": <?php echo $block->getJsLayout();?>
+        }
+    }
+</script>

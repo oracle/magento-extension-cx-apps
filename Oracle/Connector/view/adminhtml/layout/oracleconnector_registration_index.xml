@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <update handle="formkey"/>
+    <update handle="oracleconnector_registration_block"/>
+    <body>
+        <referenceContainer name="content">
+            <block class="Oracle\Connector\Block\Adminhtml\Registration" name="adminhtml.oracleconnector.registration.container"/>
+        </referenceContainer>
+    </body>
+</page>

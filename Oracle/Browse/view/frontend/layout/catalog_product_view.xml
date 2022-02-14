@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+  <body>
+    <referenceContainer name="page.bottom">
+      <block
+        class="Oracle\Browse\CustomerData\Fiddle"
+        name="oracle_browse_fiddle"
+        template="Oracle_Browse::view.phtml">
+        <arguments>
+          <argument name="jsLayout" xsi:type="array">
+            <item name="components" xsi:type="array">
+              <item name="browse-fiddle" xsi:type="array">
+                <item name="component" xsi:type="string">Oracle_Browse/js/fiddle</item>
+              </item>
+            </item>
+          </argument>
+        </arguments>
+      </block>
+    </referenceContainer>
+  </body>
+</page>

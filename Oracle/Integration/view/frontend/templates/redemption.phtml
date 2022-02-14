@@ -1,0 +1,13 @@
+<div class="block block-redemption" data-bind="scope: 'redemption'" data-role="redemption" style="display: none;">
+    <div data-bind="if: redemption().enabled">
+        <script type="text/javascript" src="https://cdn.oracle.com/coupon/js/bcm.js"></script>
+        <div data-bind="bcmBinding: redemption()"></div>
+    </div>
+</div>
+<script type="text/x-magento-init">
+    {
+        "[data-role=redemption]": {
+            "Magento_Ui/js/core/app": <?php echo $block->getJsLayout();?>
+        }
+    }
+</script>

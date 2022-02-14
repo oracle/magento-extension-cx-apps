@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="oracle_connector_gather_endpoints">
+        <observer name="oracle_advanced_gather_endpoints" instance="Oracle\Connector\Observer\AfterGatherEndpointsObserver" />
+    </event>
+    <event name="oracle_connector_advanced_endpoint">
+        <observer name="oracle_advanced_gather_endpoint" instance="Oracle\Connector\Observer\AfterEndpointInfoObserver" />
+    </event>
+    <event name="oracle_connector_script_advanced_event">
+        <observer name="oracle_connector_job_processevent_queue" instance="Oracle\Connector\Observer\AfterProcessEventsObserver" />
+    </event>
+    <event name="oracle_connector_script_advanced_test">
+        <observer name="oracle_connector_script_process_test" instance="Oracle\Connector\Observer\AfterProcessTestObserver" />
+    </event>
+    <event name="oracle_connector_script_advanced_historical">
+        <observer name="oracle_connector_script_historical_trigger" instance="Oracle\Connector\Observer\AfterProcessHistoricalObserver" />
+    </event>
+    <event name="oracle_connector_script_settings_test">
+        <observer name="oracle_connector_script_settings_test_handle" instance="Oracle\Connector\Observer\AfterPreviewSettingsObserver" />
+    </event>
+    <event name="oracle_connector_trigger_flush">
+        <observer name="oracle_connector_script_advanced_flush" instance="Oracle\Connector\Observer\AfterTriggerFlushObserver" />
+    </event>
+</config>

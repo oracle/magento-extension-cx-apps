@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+  <body>
+    <referenceContainer name="page.bottom">
+      <block
+          class="Magento\Framework\View\Element\Template"
+          name="oracle_order_bta"
+          template="Oracle_Order::bta.phtml">
+        <arguments>
+          <argument name="jsLayout" xsi:type="array">
+            <item name="components" xsi:type="array">
+              <item name="bta" xsi:type="array">
+                <item name="component" xsi:type="string">Oracle_Order/js/view/bta</item>
+              </item>
+            </item>
+          </argument>
+        </arguments>
+      </block>
+    </referenceContainer>
+  </body>
+</page>

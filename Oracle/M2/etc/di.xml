@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+  <preference for="Oracle\M2\Common\Transfer\Adapter" type="oracleAdapter"/>
+  <virtualType name="oracleAdapter" type="Oracle\M2\Common\Transfer\Curl\Adapter">
+    <arguments>
+      <argument name="options" xsi:type="array">
+        <item name="timeout" xsi:type="number">15</item>
+      </argument>
+    </arguments>
+  </virtualType>
+  <preference for="Oracle\M2\Common\Serialize\BiDirectional" type="Oracle\M2\Common\Serialize\Json\Standard"/>
+  <preference for="Oracle\M2\Connector\MiddlewareInterface" type="Oracle\M2\Connector\Middleware"/>
+  <preference for="Oracle\M2\Connector\ConnectorInterface" type="Oracle\M2\Connector\Middleware"/>
+  <preference for="Oracle\M2\Connector\Event\PlatformInterface" type="Oracle\M2\Connector\Event\Platform"/>
+  <preference for="Oracle\M2\Connector\SettingsInterface" type="Oracle\M2\Connector\Settings"/>
+  <preference for="Oracle\M2\Core\Directory\CurrencyManagerInterface" type="Oracle\M2\Impl\Core\Currency"/>
+  <preference for="Oracle\M2\Core\Cookie\ReaderInterface" type="Oracle\M2\Impl\Core\Cookies"/>
+  <preference for="Oracle\M2\Core\Cookie\WriterInterface" type="Oracle\M2\Impl\Core\Cookies"/>
+  <preference for="Oracle\M2\Core\Log\LoggerInterface" type="Oracle\M2\Impl\Core\Logger"/>
+  <preference for="Oracle\M2\Core\MetaInterface" type="Oracle\M2\Impl\Core\Meta"/>
+  <preference for="Oracle\M2\Core\EncryptorInterface" type="Oracle\M2\Impl\Core\Encryptor"/>
+  <preference for="Oracle\M2\Core\Catalog\CategoryCacheInterface" type="Oracle\M2\Impl\Core\CategoryCacheBridge"/>
+  <preference for="Oracle\M2\Core\Catalog\ProductCacheInterface" type="Oracle\M2\Impl\Core\ProductCacheBridge"/>
+  <preference for="Oracle\M2\Core\Config\ScopedInterface" type="Oracle\M2\Impl\Core\Scoped"/>
+  <preference for="Oracle\M2\Core\Config\FactoryInterface" type="Oracle\M2\Impl\Core\Config"/>
+  <preference for="Oracle\M2\Core\Config\ManagerInterface" type="Oracle\M2\Impl\Core\Config"/>
+  <preference for="Oracle\M2\Core\Event\ManagerInterface" type="Oracle\M2\Impl\Core\Event"/>
+  <preference for="Oracle\M2\Core\Store\ManagerInterface" type="Oracle\M2\Impl\Core\Store"/>
+  <preference for="Oracle\M2\Core\App\EmulationInterface" type="Oracle\M2\Impl\Core\Emulation"/>
+  <preference for="Oracle\M2\Core\Sales\RuleManagerInterface" type="Oracle\M2\Impl\Core\RuleManager"/>
+  <preference for="Oracle\M2\Core\Customer\CacheInterface" type="Oracle\M2\Impl\Core\CustomerCacheBridge"/>
+  <preference for="Oracle\M2\Core\Subscriber\ManagerInterface" type="Oracle\M2\Impl\Core\Subscribers"/>
+  <preference for="Oracle\M2\Core\Catalog\ImageHelperInterface" type="Oracle\M2\Impl\Core\ImageHelperBridge"/>
+  <preference for="Oracle\M2\Core\Report\CollectionFactoryInterface" type="Oracle\M2\Impl\Core\ReportManager"/>
+  <preference for="Oracle\M2\Coupon\ManagerInterface" type="Oracle\M2\Coupon\Manager"/>
+  <preference for="Oracle\M2\Integration\SettingsInterface" type="Oracle\M2\Integration\Settings"/>
+  <preference for="Oracle\M2\Integration\PopupSettingsInterface" type="Oracle\M2\Integration\PopupSettings"/>
+  <preference for="Oracle\M2\Integration\CartSettingsInterface" type="Oracle\M2\Integration\CartSettings"/>
+  <preference for="Oracle\M2\Integration\CouponSettingsInterface" type="Oracle\M2\Integration\CouponSettings"/>
+  <preference for="Oracle\M2\Optin\SettingsInterface" type="Oracle\M2\Optin\Settings"/>
+  <preference for="Oracle\M2\Order\SettingsInterface" type="Oracle\M2\Order\Settings"/>
+  <preference for="Oracle\M2\Core\Customer\SessionInterface" type="Oracle\M2\Impl\Core\CustomerSession"/>
+  <preference for="Oracle\M2\Core\Sales\CheckoutSessionInterface" type="Oracle\M2\Impl\Core\CheckoutSession"/>
+  <preference for="Oracle\M2\Core\Sales\QuoteManagementInterface" type="Oracle\M2\Impl\Core\QuoteManager"/>
+  <preference for="Oracle\M2\Notification\SettingsInterface" type="Oracle\M2\Notification\Settings"/>
+  <preference for="Oracle\M2\Notification\ManagerInterface" type="Oracle\M2\Notification\Manager"/>
+  <preference for="Oracle\M2\Core\Notification\InboxInterface" type="Oracle\M2\Impl\Core\InboxManager"/>
+  <preference for="Oracle\M2\Core\Catalog\ProductAttributeCacheInterface" type="Oracle\M2\Impl\Core\ProductAttributeBridge"/>
+  <preference for="Oracle\M2\Core\Sales\OrderStatusesInterface" type="Oracle\M2\Impl\Core\OrderStatuses"/>
+  <preference for="Oracle\M2\Product\SettingsInterface" type="Oracle\M2\Product\Settings"/>
+  <preference for="Oracle\M2\Core\Sales\OrderCacheInterface" type="Oracle\M2\Impl\Core\OrderCacheBridge"/>
+  <preference for="Oracle\M2\Core\Catalog\ProductCategoryResolverInterface" type="Oracle\M2\Core\Catalog\ProductCategoryResolverImpl"/>
+  <preference for="Oracle\M2\Core\Catalog\CategoryResolverInterface" type="Oracle\M2\Core\Catalog\CategoryResolverGeneric" />
+  <preference for="Oracle\M2\Core\Catalog\CategoryResolverFactoryInterface" type="Oracle\M2\Impl\Core\CategoryResolverFactory"/>
+  <preference for="Oracle\M2\Core\Customer\GroupCacheInterface" type="Oracle\M2\Impl\Core\GroupCacheBridge"/>
+  <preference for="Oracle\M2\Core\Stock\ManagerInterface" type="Oracle\M2\Impl\Core\Stock"/>
+  <preference for="Oracle\M2\Core\Sales\AddressRenderInterface" type="Oracle\M2\Impl\Core\AddressRender"/>
+  <preference for="Oracle\M2\Core\Store\UrlManagerInterface" type="Oracle\M2\Impl\Core\Urls"/>
+  <preference for="Oracle\M2\Product\CategorySettingsInterface" type="Oracle\M2\Product\CategorySettings" />
+  <preference for="Magento\Framework\Filesystem\DriverInterface" type="Magento\Framework\Filesystem\Driver\File" />
+</config>

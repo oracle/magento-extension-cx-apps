@@ -1,0 +1,14 @@
+<?php if ($block->canRenderProductId()) : ?>
+<div class="block block-browse-fiddle" data-bind="scope: 'browse-fiddle'" data-role="browse-fiddle" style="display: none;">
+    <div data-bind="browseFiddleBinding: browseFiddle()"></div>
+    <div id="browse-type">VIEW</div>
+        <div id="oracle-product-id"><?php echo $block->getCurrentProductId();?></div>
+</div>
+<script type="text/x-magento-init">
+{
+  "[data-role=browse-fiddle]": {
+    "Magento_Ui/js/core/app": <?php echo $block->getJsLayout();?>
+  }
+}
+</script>
+<?php endif ?>

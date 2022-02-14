@@ -1,0 +1,26 @@
+{
+    "name": "oracle/magento-module-all",
+    "description": "Oracle Extension for Magento - All Modules",
+    "type": "metapackage",
+    "license": [
+        "UPL-1.0"
+    ],
+    "require": {
+        "oracle/magento-module-browse": "0.0.1",
+        "oracle/magento-module-cart": "0.0.1",
+        "oracle/magento-module-connector": "0.0.1",
+        "oracle/magento-module-contact": "0.0.1",
+        "oracle/magento-module-coupon": "0.0.1",
+        "oracle/magento-module-email": "0.0.1",
+        "oracle/magento-module-integration": "0.0.1",
+        "oracle/magento-module-inventory": "0.0.1",
+        "oracle/magento-module-m2": "0.0.1",
+        "oracle/magento-module-notification": "0.0.1",
+        "oracle/magento-module-order": "0.0.1",
+        "oracle/magento-module-optin": "0.0.1",
+        "oracle/magento-module-product": "0.0.1",
+        "oracle/magento-module-rating": "0.0.1",
+        "oracle/magento-module-redemption": "0.0.1"
+    },
+    "version": "0.0.1"
+}

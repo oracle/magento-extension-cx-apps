@@ -1,0 +1,19 @@
+{
+  "settings": {
+    "enabled": true,
+    "status": "PROCESSED",
+    "import_status": [
+      "pending",
+      "complete",
+      "processing"
+    ],
+    "delete_status": [
+      "holded",
+      "canceled",
+      "closed"
+    ],
+    "price": "display",
+    "description": "description",
+    "image_type": "image"
+  }
+}

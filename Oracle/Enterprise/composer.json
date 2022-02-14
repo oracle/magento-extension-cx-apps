@@ -1,0 +1,13 @@
+{
+    "name": "oracle/magento-module-enterprise",
+    "description": "Oracle Extension for Magento - Enterprise Modules",
+    "type": "metapackage",
+    "license": [
+        "UPL-1.0"
+    ],
+    "require": {
+        "oracle/magento-module-reward": "0.0.1",
+        "oracle/magento-module-balance": "0.0.1"
+    },
+    "version": "0.0.1"
+}

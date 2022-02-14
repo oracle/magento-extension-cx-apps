@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="oracle_connector_queue_contact_transform">
+        <observer name="oracle_connector_queue_contact_transform_handle" instance="Oracle\Contact\Observer\AfterTransformEventObserver" />
+    </event>
+    <event name="oracle_connector_gather_endpoints">
+        <observer name="oracle_contact_gather_endpoints" instance="Oracle\Contact\Observer\AfterGatherEndpointsObserver" />
+    </event>
+    <event name="oracle_connector_contact_endpoint">
+        <observer name="oracle_contact_gather_endpoint" instance="Oracle\Contact\Observer\AfterEndpointInfoObserver" />
+    </event>
+    <event name="oracle_connector_advanced_endpoint_additional">
+        <observer name="oracle_contact_advanced_import" instance="Oracle\Contact\Observer\AfterAdvancedAdditionalObserver" />
+    </event>
+    <event name="oracle_connector_script_contact_historical">
+        <observer name="oracle_connector_script_contact_historical" instance="Oracle\Contact\Observer\AfterHistoricalImportObserver" />
+    </event>
+    <event name="oracle_connector_script_contact_test">
+        <observer name="oracle_connector_script_contact_test" instance="Oracle\Contact\Observer\AfterTestImportObserver" />
+    </event>
+    <event name="sales_model_service_quote_submit_success">
+        <observer name="oracle_contact_guest_order_check" instance="Oracle\Contact\Observer\AfterUpdateGuestInfoObserver" />
+    </event>
+    <event name="customer_save_after">
+        <observer name="Oracle_Contact::pushCustomer" instance="Oracle\Contact\Observer\AfterCustomerSaveObserver" />
+    </event>
+    <event name="customer_register_success">
+        <observer name="Oracle_Contact::pushNewCustomer" instance="Oracle\Contact\Observer\AfterCustomerSaveObserver" />
+    </event>
+    <event name="controller_action_predispatch_customer_account_editPost">
+        <observer name="Oracle_Contact::pushEmailCustomer" instance="Oracle\Contact\Observer\AfterAccountEditedObserver" />
+    </event>
+</config>

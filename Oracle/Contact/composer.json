@@ -1,0 +1,22 @@
+{
+    "name": "oracle/magento-module-contact",
+    "description": "Oracle Extension for Magento - Contact Module",
+    "type": "magento2-module",
+    "license": [
+        "UPL-1.0"
+    ],
+    "require": {
+        "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+        "magento/module-customer": "^100|^101|^102|^103",
+        "oracle/magento-module-connector": "0.0.1"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Oracle\\Contact\\": ""
+        }
+    },
+    "version": "0.0.1"
+}

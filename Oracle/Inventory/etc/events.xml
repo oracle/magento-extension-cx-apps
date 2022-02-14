@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="oracle_product_extra_fields">
+        <observer name="oracle_inventory_extra_fields" instance="Oracle\Inventory\Model\Observer\AfterProductExtraFieldsObserver" />
+    </event>
+    <event name="oracle_product_default_fields">
+        <observer name="oracle_inventory_default_fields" instance="Oracle\Inventory\Model\Observer\AfterSetDefaultFieldsObserver" />
+    </event>
+    <event name="oracle_product_custom_fields">
+        <observer name="oracle_inventory_custom_fields" instance="Oracle\Inventory\Model\Observer\AfterSetCustomFieldsObserver" />
+    </event>
+    <event name="oracle_product_attribute_fields">
+        <observer name="oracle_inventory_attribute_fields" instance="Oracle\Inventory\Model\Observer\AfterSetAttributeFieldsObserver" />
+    </event>
+    <event name="checkout_submit_all_after">
+        <observer name="oracle_inventory_stock_checkout_submit" instance="Oracle\Inventory\Model\Observer\AfterCheckoutSubmitAllAfterObserver" />
+    </event>
+    <event name="sales_order_creditmemo_save_after">
+        <observer name="oracle_inventory_stock_creditmemo_save_after" instance="Oracle\Inventory\Model\Observer\AfterCreditmemoSaveAfterObserver" />
+    </event>
+    <event name="sales_order_item_cancel">
+        <observer name="oracle_inventory_stock_order_item_cancel" instance="Oracle\Inventory\Model\Observer\AfterOrderItemCancelObserver" />
+    </event>
+</config>

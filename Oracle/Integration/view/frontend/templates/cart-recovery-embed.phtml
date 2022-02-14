@@ -1,0 +1,24 @@
+<?php
+/*
+ * Copyright © 2021, 2022 Oracle and/or its affiliates.
+ *
+ * Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
+ */
+
+// Note: Any changes in the snippet code requires a cache flush
+
+// Rebuild the embedded script code so that we can insert it into the
+// DOM after customer cart section data has been rendered.
+?>
+<script>
+    function addEmbeddedScript () {
+        var scriptElem = document.createElement('script');
+        <?php
+        foreach ($block->getEmbedScriptTagAttributes() as $name => $value) {
+            echo "scriptElem.setAttribute('{$name}','{$value}');\n\t\t";
+        }
+        ?>
+        scriptElem.appendChild(document.createTextNode("<?php echo $block->getEmbedScriptCode(); ?>"));
+        jQuery(".page-bottom .content").get(0).appendChild(scriptElem);
+    }
+</script>

@@ -1,0 +1,22 @@
+{
+  "script_manager" : {
+    "enabled" : true
+  },
+  "browse_recovery" : {
+    "enabled" : false
+  },
+  "coupon_manager" : {
+    "enabled" : false,
+    "toggle_api" : "api"
+  },
+  "cart_recovery" : {
+    "enabled" : false,
+    "selectors" : ".validate-email",
+    "tax_included" : false
+  },
+  "popup_manager" : {
+    "enabled" : false,
+    "createSubscribers" : false
+  },
+  "legacyIntegrations" : {}
+}

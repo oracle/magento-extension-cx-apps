@@ -1,0 +1,49 @@
+<div class="block block-recovery" data-bind="scope: 'recovery'" data-role="recovery">
+    <div data-bind="with: recovery()">
+        <div data-bind="if: typeof shouldWriteDom != 'undefined' && shouldWriteDom">
+            <div id="oracle-cart-recovery-shadow" style="display: none;">
+                <div data-bind="if: hasOrderMetadata">
+                    <div id="oracle-cart-recovery-order-id" data-bind="html: orderId"></div>
+                </div>
+                <div data-bind="if: hasCartMetadata">
+                    <div id="oracle-cart-recovery-cart-url" data-bind="html: cartUrl"></div>
+                    <div id="oracle-cart-recovery-cart-id" data-bind="html: cartId"></div>
+                </div>
+                <div data-bind="if: lineItemsCount > 0">
+                    <div id="oracle-cart-recovery-line-items">
+                        <div data-bind="foreach: lineItems">
+                            <div class="oracle-cart-recovery-line-item">
+                                <div class="oracle-cart-recovery-line-item-sku" data-bind="html: sku"></div>
+                                <div class="oracle-cart-recovery-line-item-name" data-bind="html: name"></div>
+                                <div class="oracle-cart-recovery-line-item-description" data-bind="html: description"></div>
+                                <div class="oracle-cart-recovery-line-item-category" data-bind="html: category"></div>
+                                <div class="oracle-cart-recovery-line-item-url" data-bind="html: url"></div>
+                                <div class="oracle-cart-recovery-line-item-image" data-bind="html: image"></div>
+                                <div class="oracle-cart-recovery-line-item-other" data-bind="html: other"></div>
+                                <div class="oracle-cart-recovery-line-item-unit-price" data-bind="html: unitPrice"></div>
+                                <div class="oracle-cart-recovery-line-item-sale-price" data-bind="html: salePrice"></div>
+                                <div class="oracle-cart-recovery-line-item-total-price" data-bind="html: totalPrice"></div>
+                                <div class="oracle-cart-recovery-line-item-quantity" data-bind="html: quantity"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-bind="if: typeof emailAddress != 'undefined' && emailAddress">
+                    <div id="oracle-cart-recovery-email-address" data-bind="html: emailAddress"></div>
+                </div>
+                <div id="oracle-cart-recovery-currency" data-bind="html: currency"></div>
+                <div id="oracle-cart-recovery-discount-amount" data-bind="html: discountAmount"></div>
+                <div id="oracle-cart-recovery-subtotal" data-bind="html: subtotal"></div>
+                <div id="oracle-cart-recovery-tax-amount" data-bind="html: taxAmount"></div>
+                <div id="oracle-cart-recovery-grand-total" data-bind="html: grandTotal"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/x-magento-init">
+    {
+        "[data-role=recovery]": {
+            "Magento_Ui/js/core/app": <?php echo $block->getJsLayout();?>
+        }
+    }
+</script>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="Oracle extension for Magento 2">
+    <description>The coding standard for Oracle's Magento 2 extension</description>
+
+    <file>Oracle</file>
+
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+
+    <arg name="report" value="full"/>
+    <arg name="extensions" value="php,phtml,js"/>
+    <arg name="tab-width" value="4"/>
+    <arg name="encoding" value="utf-8"/>
+    <arg name="error-severity" value="10"/>
+
+    <rule ref="Magento2"/>
+</ruleset>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+  <preference for="Oracle\M2\Email\SettingsInterface" type="Oracle\Email\Model\Settings"/>
+  <preference for="Oracle\M2\Email\TriggerManagerInterface" type="Oracle\Email\Impl\Trigger"/>
+  <preference for="Magento\Sales\Order\Email\SenderBuilder" type="Oracle\Email\Plugin\OrderSenderBuilder" />
+  <type name="Magento\Framework\Mail\TransportInterfaceFactory">
+    <plugin name="Oracle_Email::createTransport" type="Oracle\Email\Plugin\CreateTransport" />
+  </type>
+  <type name="Magento\Framework\Mail\Template\FactoryInterface">
+    <plugin name="Oracle_Email::loadTemplate" type="Oracle\Email\Plugin\LoadTemplate" />
+  </type>
+  <type name="Magento\Config\Model\Config\Source\Email\Template">
+    <plugin name="Oracle_Email::toOptionArray" type="Oracle\Email\Plugin\ConfigOptions" />
+  </type>
+</config>

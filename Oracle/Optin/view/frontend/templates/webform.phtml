@@ -1,0 +1,13 @@
+<div class="block block-webform" data-bind="scope: 'webform'" data-role="webform">
+    <div data-bind="with: webform()">
+        <div data-bind="html: webformBefore"></div>
+        <iframe data-bind="attr: {src: webformUrl}, style: {height: webformHeight + 'px'}" frameborder="0" style="width:100%;border:none;" height="100%" width="100%"></iframe>
+    </div>
+</div>
+<script type="text/x-magento-init">
+    {
+        "[data-role=webform]": {
+            "Magento_Ui/js/core/app": <?php echo $block->getJsLayout();?>
+        }
+    }
+</script>

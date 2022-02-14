@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="oracle_connector_advanced_endpoint_additional">
+        <observer name="oracle_notification_advanced_additional" instance="Oracle\Notification\Model\Observer\AfterAdvancedAdditionalObserver" />
+    </event>
+    <event name="oracle_connector_script_notification_event">
+        <observer name="oracle_notification_script_event" instance="Oracle\Notification\Model\Observer\AfterCreateAnnouncementsObserver" />
+    </event>
+</config>

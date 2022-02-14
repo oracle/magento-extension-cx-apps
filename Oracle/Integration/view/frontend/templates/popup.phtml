@@ -1,0 +1,12 @@
+<?php if ($block->isPopupEnabled()) : ?>
+<script type="text/javascript" oracle-popup-id="<?php echo implode(' ', $block->escapeHtml($block->getPopupDomains())); ?>" src="https://cdn.oracle.com/popup/delivery.js"></script>
+<script type="text/javascript">
+  if (document.addEventListener) {
+    document.addEventListener('oracle:popup-submitted', function(e) {
+      jQuery.post('<?php echo $block->escapeHtml($block->getPopupUrl()); ?>', {
+        emailAddress: e.detail.email
+      });
+    }, false);
+  }
+</script>
+<?php endif; ?>

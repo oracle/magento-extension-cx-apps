@@ -1,0 +1,15 @@
+{
+  "settings": {
+    "enabled": true,
+    "syncUnsubs": true,
+    "lists": [
+      "__ListAutoConfiguration__{'name': 'MagentoOptIns','label': 'Magento Opt-ins'}"
+    ]
+  },
+  "checkout": {
+    "enabled": false
+  },
+  "form": {
+    "enabled": false
+  }
+}

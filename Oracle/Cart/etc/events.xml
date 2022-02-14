@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+  <event name="oracle_connector_queue_cart_transform">
+    <observer name="oracle_connector_queue_cart_transform_handle" instance="Oracle\Cart\Model\Observer\AfterTransformEventObserver" />
+  </event>
+  <event name="oracle_connector_integration_endpoint_additional">
+    <observer name="oracle_cart_integration_endpoint_additional" instance="Oracle\Cart\Model\Observer\AfterIntegrationAdditionalObserver" />
+  </event>
+  <event name="sales_model_service_quote_submit_success">
+    <observer name="oracle_cart_quote_submitted" instance="Oracle\Cart\Model\Observer\AfterPushChangesObserver" />
+  </event>
+  <event name="sales_quote_delete_after">
+    <observer name="oracle_cart_quote_delete_after" instance="Oracle\Cart\Model\Observer\AfterPushChangesObserver" />
+  </event>
+  <event name="oracle_optin_subscribe">
+  <observer name="oracle_optin_subscribe_handle" instance="Oracle\Cart\Model\Observer\AfterSubscribeObserver" />
+  </event>
+  <event name="oracle_checkout_email_capture">
+    <observer name="oracle_checkout_email_capture_handle" instance="Oracle\Cart\Model\Observer\AfterCheckoutEmailCaptureObserver" />
+  </event>
+</config>

@@ -1,0 +1,22 @@
+{
+    "name": "oracle/magento-module-coupon",
+    "description": "Oracle Extension for Magento - Coupon Module",
+    "type": "magento2-module",
+    "license": [
+        "UPL-1.0"
+    ],
+    "require": {
+        "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+        "magento/module-sales-rule": "^100|^101|^102",
+        "oracle/magento-module-connector": "0.0.1"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Oracle\\Coupon\\": ""
+        }
+    },
+    "version": "0.0.1"
+}

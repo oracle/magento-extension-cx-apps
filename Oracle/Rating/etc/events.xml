@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="oracle_product_extra_fields">
+        <observer name="oracle_rating_extra_fields" instance="Oracle\Rating\Model\Observer\AfterProductExtraFieldsObserver" />
+    </event>
+    <event name="oracle_product_default_fields">
+        <observer name="oracle_rating_default_fields" instance="Oracle\Rating\Model\Observer\AfterSetDefaultFieldsObserver" />
+    </event>
+    <event name="oracle_product_custom_fields">
+        <observer name="oracle_rating_custom_fields" instance="Oracle\Rating\Model\Observer\AfterSetCustomFieldsObserver" />
+    </event>
+    <event name="oracle_product_attribute_fields">
+        <observer name="oracle_rating_attribute_fields" instance="Oracle\Rating\Model\Observer\AfterSetAttributeFieldsObserver" />
+    </event>
+</config>
