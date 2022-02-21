@@ -30,10 +30,7 @@ jobs:
         run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
 
       - name: Install dependencies
-        uses: php-actions/composer@v6
-        with:
-          php_version: 7.4
-          version: 2
+        run: php -v
 
       - name: print the repo name
         run: echo ${{ github.repository }}
@@ -42,15 +39,10 @@ jobs:
         run: |
           set +o pipefail
           export VERSION="unknown"
-          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          export RELEASE_ENV="stg"
           echo "RELEASE_ENV=${{ needs.build.outputs.releaseEnv }}" >> $GITHUB_ENV
           echo "VERSION=${{ needs.build.outputs.version }}" >> $GITHUB_ENV
-          echo "Printing the env name"
-          env
-          git status
-          echo "Printing env.RELEASE_ENV name"
-          echo $RELEASE_ENV
-          echo env.RELEASE_ENV
+
       - name: Download site Content
         if: ${{ env.RELEASE_ENV == 'prod' }}
         uses: actions/download-artifact@v2
@@ -269,6 +261,9 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php-versions: ['7.4']
 
     outputs:
       releaseEnv: ${{ steps.gen_release_meta.outputs.releaseEnv }}
@@ -283,32 +278,32 @@ jobs:
       - name: Add HTTP basic auth credentials
         run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
 
-      - name: Install dependencies
-        uses: php-actions/composer@v6
-        with:
-          php_version: 7.4
-          version: 2
-
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: php -v
+        run:  |
+          sudo update-alternatives --set php /usr/bin/php7.4
+          php -v
+          php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+          php -r "if (hash_file('sha384', 'composer-setup.php') === '906a84df04cea2aa72f40b5f787e49f22d4c2f19492ac310e8cba5b96ac8b64115ac402c8cd292b8a03482574915d1a8') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+          php composer-setup.php
+          php -r "unlink('composer-setup.php');"
+          composer --version
+          composer global config http-basic.repo.magento.com ee2bca233fc2a75d555a1a7489fba0ef aa95fe5d597c8d63b7e3f211c391eba4
+          composer install
+
 
       - name: Generate version
         id: gen_release_meta
         run: |
           php ci/gen-version.php  > ./version
-          ls
           set +o pipefail
           export VERSION="unknown"
           [ -f ./version ] && export VERSION=$(cat ./version)
           echo "VERSION=$VERSION" >> $GITHUB_ENV
           [ -f ./environment ] && export RELEASE_ENV=$(cat ./environment)
           echo "RELEASE_ENV=RELEASE_ENV" >> $GITHUB_ENV
-
           echo "::set-output name=releaseEnv::$RELEASE_ENV"
           echo "::set-output name=version::$VERSION"
-          echo "*******"
-          rm ./environment
 
       - name: Execute build steps
         run:  php ci/build.php --environment prod --version $VERSION
