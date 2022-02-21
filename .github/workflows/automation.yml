@@ -272,9 +272,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Add HTTP basic auth credentials
-        run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
-
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run:  |
