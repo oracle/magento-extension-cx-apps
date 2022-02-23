@@ -142,8 +142,12 @@ function updatePodEnvURL(string $url)
     $contents = file_get_contents(PLATFORM_FILE_PATH);
     $sarlacc = $url.'/ecom/ams/app/magento/application/request/object/ingest';
 
-    $contents = preg_replace("~const SARLACC = '.*'~", "const SARLACC = '{$sarlacc}'",
-        $contents);
+    $responsys_event_url = $url. '/ecom/ams/app/magento/application/request/message/ingest';
+
+    $contents = preg_replace("~const SARLACC = '.*'~", "const SARLACC = '{$sarlacc}'", $contents);
+
+    $contents = preg_replace("~const RESPONSYS_EVENT_URL = '.*'~", "const RESPONSYS_EVENT_URL = '{$responsys_event_url}'", $contents);
+
     file_put_contents(PLATFORM_FILE_PATH, $contents);
 }
 
