@@ -269,6 +269,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Add HTTP basic auth credentials
+        run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
+
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run:  |
@@ -279,9 +282,7 @@ jobs:
           php composer-setup.php
           php -r "unlink('composer-setup.php');"
           composer --version
-          composer global config http-basic.repo.magento.com ee2bca233fc2a75d555a1a7489fba0ef aa95fe5d597c8d63b7e3f211c391eba4
           composer install
-
 
       - name: Generate version
         id: gen_release_meta
