@@ -102,10 +102,18 @@ abstract class SettingsAbstract extends \Oracle\M2\Core\Config\ContainerAbstract
         return array_combine(self::$_attributeKeys, $attributes);
     }
 
+    private function buildNewAccountResetPasswordURL($object, $storeId) {
+        return $this->_storeManager->getStore($storeId)->getBaseUrl().'customer/account/createPassword/?id='.$object->getId().'&token='.$object->getData('rp_token');
+    }
+
+    private function buildResetPasswordURL($object, $storeId) {
+        return $this->_storeManager->getStore($storeId)->getBaseUrl().'customer/account/createPassword/?token='.$object->getData('rp_token');
+    }
+
     /**
      * @see parent
      */
-    public function getFieldsForModel($object, $storeId, $type = 'contact')
+    public function getFieldsForModel($object, $storeId, $type = 'contact', $eventName = '')
     {
         $fields = [];
 
@@ -127,8 +135,18 @@ abstract class SettingsAbstract extends \Oracle\M2\Core\Config\ContainerAbstract
             ];
             if($object->getPasswordHash() == null) {
                 $fields[] = [
+                    'fieldId' => 'newAccountResetPasswordURL',
+                    'content' => $this->buildNewAccountResetPasswordURL($object, $storeId)
+                ];
+            } elseif($eventName == "resetPassword") {
+                $fields[] = [
                     'fieldId' => 'resetPasswordURL',
-                    'content' => $this->_storeManager->getStore($storeId)->getBaseUrl().'customer/account/createPassword/?id='.$object->getId().'&token='.$object->getData('rp_token')
+                    'content' => $this->buildResetPasswordURL($object, $storeId)
+                ];
+            } elseif($eventName == "forgotPassword") {
+                $fields[] = [
+                    'fieldId' => 'forgotPasswordURL',
+                    'content' => $this->buildResetPasswordURL($object, $storeId)
                 ];
             }
         }

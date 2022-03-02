@@ -279,7 +279,13 @@ abstract class ExtensionAbstract extends \Oracle\M2\Connector\Discovery\Advanced
         } else {
             $customer = $this->_customerRepo->getById($event['id']);
             if ($customer) {
-                $data = $this->_source->transform($customer);
+                if($event['resetPassword']) {
+                    $data = $this->_source->transformForEvent($customer, "resetPassword");
+                } elseif ($event['forgotPassword']) {
+                    $data = $this->_source->transformForEvent($customer, "forgotPassword");
+                } else {
+                    $data = $this->_source->transform($customer);
+                }
             }
         }
         $transform->setContact($data);
