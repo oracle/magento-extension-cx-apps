@@ -33,7 +33,9 @@ class Source implements \Oracle\M2\Connector\Event\SourceInterface, \Oracle\M2\C
               $this->getEventType(),
               $this->action($customer),
               $customer->getId()
-          ])
+          ]),
+          'resetPassword' => $customer->hasData("resetPassword"),
+          'forgotPassword' => $customer->hasData("forgotPassword")
         ];
     }
 
@@ -71,4 +73,13 @@ class Source implements \Oracle\M2\Connector\Event\SourceInterface, \Oracle\M2\C
             ];
         }
     }
+
+    public function transformForEvent($customer, $eventName) {
+        return [
+            'email' => $customer->getEmail(),
+            'status' => 'transactional',
+            'fields' => $this->_helper->getFieldsForModel($customer, $customer->getStore(), 'contact', $eventName)
+        ];
+    }
+
 }

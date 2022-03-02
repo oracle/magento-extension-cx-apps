@@ -69,6 +69,12 @@ abstract class ExtensionPushEventAbstract implements \Oracle\M2\Connector\Discov
         if (is_null($storeId) || $storeId === false) {
             $storeId = true;
         }
+        if($observer->hasData("resetPassword")) {
+            $object->setData("resetPassword", $observer->getData("resetPassword"));
+        }
+        if($observer->hasData("forgotPassword")) {
+            $object->setData("forgotPassword", $observer->getData("forgotPassword"));
+        }
         $this->_pushLogic->pushEvent($object, $storeId);
     }
 
