@@ -125,6 +125,12 @@ abstract class SettingsAbstract extends \Oracle\M2\Core\Config\ContainerAbstract
                 'fieldId' => 'entityId',
                 'content' => $object->getEntityId()
             ];
+            if($object->getPasswordHash() == null) {
+                $fields[] = [
+                    'fieldId' => 'resetPasswordURL',
+                    'content' => $this->_storeManager->getStore($storeId)->getBaseUrl().'customer/account/createPassword/?id='.$object->getId().'&token='.$object->getData('rp_token')
+                ];
+            }
         }
 
         $store = $this->_storeManager->getStore($storeId);
