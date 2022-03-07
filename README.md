@@ -1,4 +1,4 @@
-# Magento Extension
+# Magento Connector App
 This is an extension project which allow Magento and Oracle CX Apps 
 integration for two-way data ingestion. This project aim to add marketing 
 capability through Magento e-commerce platform via Oracle CX Apps.
@@ -80,6 +80,10 @@ This command will get the specified component from the mentioned repositories ur
 Following above step will install the Magento extension. Post this follow
 instruction from the CX Apps help page to establish connection.
 
+## Documentation
+
+See [Documentation for the Magento Connector App][1].
+
 ## Contributing
 
 <!-- If your project has specific contribution requirements, update the
@@ -110,3 +114,4 @@ Copyright (c) 2021, 2022 Oracle and/or its affiliates.
 Released under the Universal Permissive License v1.0 as shown at
 <https://oss.oracle.com/licenses/upl/>.
 
+[1]: https://docs.oracle.com/en/cloud/saas/marketing/responsys-user/#cshid=MAG_Overview
