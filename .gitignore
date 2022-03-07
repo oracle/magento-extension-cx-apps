@@ -1,5 +1,4 @@
 vendor
-composer.lock
 Magento/*
 .DS_Store
 *.swp
@@ -18,7 +17,6 @@ auth.json
 CHANGELOG.md
 COPYING.txt
 Gruntfile.js.sample
-LICENSE.txt
 LICENSE_AFL.txt
 auth.json.sample
 bin/.htaccess
@@ -33,7 +31,6 @@ dev/
 /pub/
 /setup/
 /var/
-SECURITY.md
 .travis.*
 builds/*
 .DS_Store
