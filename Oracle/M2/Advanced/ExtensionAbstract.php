@@ -245,7 +245,7 @@ abstract class ExtensionAbstract implements \Oracle\M2\Connector\Discovery\Exten
             return true;
         if($dataType=='order' && $dataAction=='delete' && in_array("order_cancellation",$objectType))
             return true;
-        if($dataType=='contact' && $dataAction=='add' && in_array("customer_account_welcome",$objectType) || in_array("new_account_without_password", $objectType)))
+        if($dataType=='contact' && $dataAction=='add' && (in_array("customer_account_welcome",$objectType) || in_array("new_account_without_password", $objectType)))
             return true;
         if($dataType=='cart' && in_array("cart_event",$objectType))
             return true;
