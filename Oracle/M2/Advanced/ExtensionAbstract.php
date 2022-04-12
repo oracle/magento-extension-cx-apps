@@ -133,7 +133,7 @@ abstract class ExtensionAbstract implements \Oracle\M2\Connector\Discovery\Exten
             $this->_queueManager->deleteByIds($script['data']['eventIds']);
         }
         $results = [self::PROCESS_KEY_SUCCESS => 0, self::PROCESS_KEY_ERROR => 0];
-        $disabled = $this->_connectorSettings->isFlushDisabled($registration->getScope(), $registration->getScopeId()) && $script['data']['requestId'];
+        $disabled = $this->_connectorSettings->isFlushDisabled($registration->getScope(), $registration->getScopeId()) && array_key_exists('requestId', $script['data']) && $script['data']['requestId'];
         if (!$disabled) {
             $batchSize = $this->_connectorSettings->getBatchSize($registration->getScope(), $registration->getScopeId());
             $errorHandlerSet = false;
