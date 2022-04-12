@@ -1,5 +1,5 @@
 {
-  "latestVersion": "0.0.1",
+  "latestVersion": "0.0.11",
   "releases": {
       "0.0.1": {
           "message": "The Oracle Connector Extension v0.0.1 is available! Initial Features include:",
@@ -9,6 +9,15 @@
           ],
           "severity": 1,
           "pubDate": "2022-02-14 00:00:00"
-      }
+      },
+      "0.0.11": {
+         "message": "The Oracle Connector Extension got some new fixes!!!",
+         "notes": [
+              "Support for Few Magento Events",
+              "Few Bug Fixes!!!"
+         ],
+         "severity": 1,
+         "pubDate": "2022-04-12 00:00:00"
+    }
   }
 }
