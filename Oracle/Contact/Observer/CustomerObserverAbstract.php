@@ -5,7 +5,7 @@
  * Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
  */
 
-namespace Bronto\Contact\Observer;
+namespace Oracle\Contact\Observer;
 
 abstract class CustomerObserverAbstract implements \Magento\Framework\Event\ObserverInterface
 {
@@ -13,10 +13,10 @@ abstract class CustomerObserverAbstract implements \Magento\Framework\Event\Obse
     protected $_request;
 
     /**
-     * @param \Bronto\Contact\Model\Observer
+     * @param \Oracle\Contact\Model\Observer
      */
     public function __construct(
-        \Bronto\Contact\Model\Observer $observer,
+        \Oracle\Contact\Model\Observer $observer,
         \Magento\Framework\App\RequestInterface $req
     ) {
         $this->_observer = $observer;
