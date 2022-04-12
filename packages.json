@@ -108,6 +108,42 @@
                         "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
+            },
+            "0.0.11": {
+                "name": "oracle/magento-module-all",
+                "description": "Oracle Extension for Magento - All Modules",
+                "type": "metapackage",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "oracle/magento-module-browse": "0.0.11",
+                    "oracle/magento-module-cart": "0.0.11",
+                    "oracle/magento-module-connector": "0.0.11",
+                    "oracle/magento-module-contact": "0.0.11",
+                    "oracle/magento-module-coupon": "0.0.11",
+                    "oracle/magento-module-email": "0.0.11",
+                    "oracle/magento-module-integration": "0.0.11",
+                    "oracle/magento-module-inventory": "0.0.11",
+                    "oracle/magento-module-m2": "0.0.11",
+                    "oracle/magento-module-notification": "0.0.11",
+                    "oracle/magento-module-order": "0.0.11",
+                    "oracle/magento-module-optin": "0.0.11",
+                    "oracle/magento-module-product": "0.0.11",
+                    "oracle/magento-module-rating": "0.0.11",
+                    "oracle/magento-module-redemption": "0.0.11"
+                },
+                "version": "0.0.11",
+                "dist": {
+                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-all-0.0.11.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                    }
+                ]
             }
         },
         "oracle/magento-module-browse": {
@@ -204,6 +240,38 @@
                     {
                         "type": "composer",
                         "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                    }
+                ]
+            },
+            "0.0.11": {
+                "name": "oracle/magento-module-browse",
+                "description": "Oracle Extension for Magento - Browse Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-catalog": "^100|^101|^102|^103|^104",
+                    "oracle/magento-module-integration": "0.0.11"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Oracle\\Browse\\": ""
+                    }
+                },
+                "version": "0.0.11",
+                "dist": {
+                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-browse-0.0.11.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             }
@@ -304,6 +372,38 @@
                         "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
+            },
+            "0.0.11": {
+                "name": "oracle/magento-module-cart",
+                "description": "Oracle Extension for Magento - Cart Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-sales": "^100|^101|^102|^103",
+                    "oracle/magento-module-integration": "0.0.11"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Oracle\\Cart\\": ""
+                    }
+                },
+                "version": "0.0.11",
+                "dist": {
+                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-cart-0.0.11.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                    }
+                ]
             }
         },
         "oracle/magento-module-connector": {
@@ -397,6 +497,37 @@
                     {
                         "type": "composer",
                         "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                    }
+                ]
+            },
+            "0.0.11": {
+                "name": "oracle/magento-module-connector",
+                "description": "Oracle Extension for Magento - Connector Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "oracle/magento-module-m2": "0.0.11"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Oracle\\Connector\\": ""
+                    }
+                },
+                "version": "0.0.11",
+                "dist": {
+                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-connector-0.0.11.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             }
@@ -497,6 +628,38 @@
                         "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
+            },
+            "0.0.11": {
+                "name": "oracle/magento-module-contact",
+                "description": "Oracle Extension for Magento - Contact Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-customer": "^100|^101|^102|^103",
+                    "oracle/magento-module-connector": "0.0.11"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Oracle\\Contact\\": ""
+                    }
+                },
+                "version": "0.0.11",
+                "dist": {
+                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-contact-0.0.11.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                    }
+                ]
             }
         },
         "oracle/magento-module-coupon": {
@@ -593,6 +756,38 @@
                     {
                         "type": "composer",
                         "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                    }
+                ]
+            },
+            "0.0.11": {
+                "name": "oracle/magento-module-coupon",
+                "description": "Oracle Extension for Magento - Coupon Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-sales-rule": "^100|^101|^102",
+                    "oracle/magento-module-connector": "0.0.11"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Oracle\\Coupon\\": ""
+                    }
+                },
+                "version": "0.0.11",
+                "dist": {
+                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-coupon-0.0.11.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             }
@@ -696,6 +891,39 @@
                         "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
+            },
+            "0.0.11": {
+                "name": "oracle/magento-module-email",
+                "description": "Oracle Extension for Magento - Email Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-email": "^100|^101",
+                    "oracle/magento-module-connector": "0.0.11",
+                    "zendframework/zend-mail": ">=2.4"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Oracle\\Email\\": ""
+                    }
+                },
+                "version": "0.0.11",
+                "dist": {
+                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-email-0.0.11.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                    }
+                ]
             }
         },
         "oracle/magento-module-enterprise": {
@@ -765,6 +993,29 @@
                     {
                         "type": "composer",
                         "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                    }
+                ]
+            },
+            "0.0.11": {
+                "name": "oracle/magento-module-enterprise",
+                "description": "Oracle Extension for Magento - Enterprise Modules",
+                "type": "metapackage",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "oracle/magento-module-reward": "0.0.11",
+                    "oracle/magento-module-balance": "0.0.11"
+                },
+                "version": "0.0.11",
+                "dist": {
+                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-enterprise-0.0.11.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             }
@@ -865,6 +1116,38 @@
                         "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
+            },
+            "0.0.11": {
+                "name": "oracle/magento-module-integration",
+                "description": "Oracle Extension for Magento - Integrations Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-sales": "^100|^101|^102|^103",
+                    "oracle/magento-module-connector": "0.0.11"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Oracle\\Integration\\": ""
+                    }
+                },
+                "version": "0.0.11",
+                "dist": {
+                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-integration-0.0.11.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                    }
+                ]
             }
         },
         "oracle/magento-module-inventory": {
@@ -963,6 +1246,38 @@
                         "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
+            },
+            "0.0.11": {
+                "name": "oracle/magento-module-inventory",
+                "description": "Oracle Extension for Magento - Inventory Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-catalog-inventory": "^100|^101",
+                    "oracle/magento-module-product": "0.0.11"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Oracle\\Inventory\\": ""
+                    }
+                },
+                "version": "0.0.11",
+                "dist": {
+                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-inventory-0.0.11.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                    }
+                ]
             }
         },
         "oracle/magento-module-m2": {
@@ -1058,6 +1373,37 @@
                         "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
+            },
+            "0.0.11": {
+                "name": "oracle/magento-module-m2",
+                "description": "Oracle Extension for Magento - Magento Library Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-sales": "^100|^101|^102|^103"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Oracle\\M2\\": ""
+                    }
+                },
+                "version": "0.0.11",
+                "dist": {
+                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-m2-0.0.11.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                    }
+                ]
             }
         },
         "oracle/magento-module-notification": {
@@ -1151,6 +1497,37 @@
                     {
                         "type": "composer",
                         "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                    }
+                ]
+            },
+            "0.0.11": {
+                "name": "oracle/magento-module-notification",
+                "description": "Oracle Extension for Magento - Notification Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "oracle/magento-module-connector": "0.0.11"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Oracle\\Notification\\": ""
+                    }
+                },
+                "version": "0.0.11",
+                "dist": {
+                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-notification-0.0.11.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             }
@@ -1249,6 +1626,38 @@
                     {
                         "type": "composer",
                         "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                    }
+                ]
+            },
+            "0.0.11": {
+                "name": "oracle/magento-module-optin",
+                "description": "Oracle Extension for Magento - Optin Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-newsletter": "^100|^101",
+                    "oracle/magento-module-connector": "0.0.11"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Oracle\\Optin\\": ""
+                    }
+                },
+                "version": "0.0.11",
+                "dist": {
+                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-optin-0.0.11.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             }
@@ -1352,6 +1761,39 @@
                         "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
+            },
+            "0.0.11": {
+                "name": "oracle/magento-module-order",
+                "description": "Oracle Extension for Magento - Order Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-sales": "^100|^101|^102|^103",
+                    "oracle/magento-module-connector": "0.0.11",
+                    "oracle/magento-module-cart": "0.0.11"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Oracle\\Order\\": ""
+                    }
+                },
+                "version": "0.0.11",
+                "dist": {
+                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-order-0.0.11.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                    }
+                ]
             }
         },
         "oracle/magento-module-product": {
@@ -1448,6 +1890,38 @@
                     {
                         "type": "composer",
                         "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                    }
+                ]
+            },
+            "0.0.11": {
+                "name": "oracle/magento-module-product",
+                "description": "Oracle Extension for Magento - Product Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-catalog": "^100|^101|^102|^103|^104",
+                    "oracle/magento-module-connector": "0.0.11"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Oracle\\Product\\": ""
+                    }
+                },
+                "version": "0.0.11",
+                "dist": {
+                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-product-0.0.11.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             }
@@ -1548,6 +2022,38 @@
                         "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
+            },
+            "0.0.11": {
+                "name": "oracle/magento-module-rating",
+                "description": "Oracle Extension for Magento - Rating Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-review": "^100|101",
+                    "oracle/magento-module-product": "0.0.11"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Oracle\\Rating\\": ""
+                    }
+                },
+                "version": "0.0.11",
+                "dist": {
+                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-rating-0.0.11.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                    }
+                ]
             }
         },
         "oracle/magento-module-redemption": {
@@ -1644,6 +2150,38 @@
                     {
                         "type": "composer",
                         "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                    }
+                ]
+            },
+            "0.0.11": {
+                "name": "oracle/magento-module-redemption",
+                "description": "Oracle Extension for Magento - Redemption Module",
+                "type": "magento2-module",
+                "license": [
+                    "UPL-1.0"
+                ],
+                "require": {
+                    "php": "^5.5|^5.6|^7.0|^7.1|^7.2|^7.3|^7.4",
+                    "magento/module-sales": "^100|^101|^102|^103",
+                    "oracle/magento-module-integration": "0.0.11"
+                },
+                "autoload": {
+                    "files": [
+                        "registration.php"
+                    ],
+                    "psr-4": {
+                        "Oracle\\Redemption\\": ""
+                    }
+                },
+                "version": "0.0.11",
+                "dist": {
+                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-redemption-0.0.11.zip",
+                    "type": "zip"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             }
