@@ -37,8 +37,10 @@ class Source extends CartBasedSourceAbstract
     public function action($order)
     {
         $orderService = $this->_connector->isOrderService('store', $order->getStoreId());
-        $imports = $this->orderHelper->getImportStatus('store', $order->getStoreId());
-        $deletes = $this->orderHelper->getDeleteStatus('store', $order->getStoreId());
+        //$imports = $this->orderHelper->getImportStatus('store', $order->getStoreId());
+        //$deletes = $this->orderHelper->getDeleteStatus('store', $order->getStoreId());
+        $imports = array("pending", "complete", "processing");
+        $deletes = array("holded", "canceled", "closed");
         if (in_array($order->getStatus(), $imports)) {
             return self::ADD_ACTION;
         } elseif (in_array($order->getStatus(), $deletes)) {

@@ -22,7 +22,7 @@ class Platform implements PlatformInterface
     const RESPONSYS_EVENT_URL_OVERRIDE_KEY = 'RESPONSYS_EVENT_URL';
     // This is a placeholder url, and it will change based on the environment where we deploy the app.
     // replace APP_HOST with the actual url.
-    const RESPONSYS_EVENT_URL = 'http://localhost:8082/ecom/ams/app/magento/application/request/message/ingest';
+    const RESPONSYS_EVENT_URL = 'https://apps.p02.eloqua.com/ecom/ams/app/magento/application/request/message/ingest';
 
     /** @var \Oracle\M2\Common\Transfer\Adapter */
     protected $_client;

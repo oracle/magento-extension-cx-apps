@@ -12,7 +12,7 @@ use Magento\Backend\Setup\ConfigOptionsList;
 class Meta implements \Oracle\M2\Core\MetaInterface
 {
 
-    const EXTENSION_VERSION = '0.0.1';
+    const EXTENSION_VERSION = '0.1.0';
 
     protected $_meta;
     protected $_config;

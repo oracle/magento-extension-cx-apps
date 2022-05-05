@@ -764,10 +764,10 @@ class Middleware implements MiddlewareInterface, ConnectorInterface
             foreach ($object['fields'] as $field) {
                 // have to change this
                 // $field['value'] = ($field['value'] === 'true');
-                if($field['value'] == "true") {
+                if($field['value'] === "true") {
                     $field['value'] = true;
                 }
-                if($field['value'] == "false") {
+                if($field['value'] === "false") {
                     $field['value'] = false;
                 }
                 if(is_numeric($field['value'])) {
