@@ -9,12 +9,12 @@ namespace Oracle\Email\Model;
 
 use Magento\Framework\Mail\EmailMessageInterface;
 use Magento\Framework\Mail\MimeMessage;
-use Zend\Mail\Message;
-use Zend\Mail\Address;
-use Zend\Mail\AddressList;
-use Zend\Mime\Mime;
+use Laminas\Mail\Message;
+use Laminas\Mail\Address;
+use Laminas\Mail\AddressList;
+use Laminas\Mime\Mime;
 
-class Transport extends \Zend\Mail\Transport\Sendmail implements \Magento\Framework\Mail\TransportInterface
+class Transport extends \Laminas\Mail\Transport\Sendmail implements \Magento\Framework\Mail\TransportInterface
 {
     protected $_helper;
 
@@ -151,7 +151,7 @@ class Transport extends \Zend\Mail\Transport\Sendmail implements \Magento\Framew
 
     /**
      * Convenience function for pulling the email address string from an AddressList
-     * @see \Zend\Mail\AddressList
+     * @see \Laminas\Mail\AddressList
      *
      * @param AddressList | Address[] $addressList
      * @return String[]
