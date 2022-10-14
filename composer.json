@@ -6,7 +6,8 @@
         "php": "^7.0",
         "nategood/commando": "*",
         "phlak/semver": "^3.2",
-        "guzzlehttp/guzzle": "^7.0"
+        "guzzlehttp/guzzle": "^7.0",
+        "laminas/laminas-dependency-plugin": "^2.1"
     },
     "require-dev": {
         "aws/aws-sdk-php": "3.*",
