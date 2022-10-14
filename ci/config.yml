@@ -1,6 +1,6 @@
 cdn_urls:
-    stg: "https://github.com/oracle/magento-extension-cx-apps/releases/download"
-    prod: "https://github.com/oracle/magento-extension-cx-apps/releases/download"
+    stg: "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download"
+    prod: "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download"
 
 paths:
     build: "builds"

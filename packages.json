@@ -27,13 +27,13 @@
                 },
                 "version": "0.0.3",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-all-0.0.3.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-all-0.0.3.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
                     }
                 ]
             },
@@ -63,13 +63,13 @@
                 },
                 "version": "0.0.6",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-all-0.0.6.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-all-0.0.6.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
                     }
                 ]
             },
@@ -99,13 +99,13 @@
                 },
                 "version": "0.0.10",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-all-0.0.10.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-all-0.0.10.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
             },
@@ -135,13 +135,13 @@
                 },
                 "version": "0.0.11",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-all-0.0.11.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-all-0.0.11.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             },
@@ -171,13 +171,13 @@
                 },
                 "version": "0.1.0",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-all-0.1.0.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-all-0.1.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
                     }
                 ]
             }
@@ -205,13 +205,13 @@
                 },
                 "version": "0.0.3",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-browse-0.0.3.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-browse-0.0.3.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
                     }
                 ]
             },
@@ -237,13 +237,13 @@
                 },
                 "version": "0.0.6",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-browse-0.0.6.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-browse-0.0.6.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
                     }
                 ]
             },
@@ -269,13 +269,13 @@
                 },
                 "version": "0.0.10",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-browse-0.0.10.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-browse-0.0.10.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
             },
@@ -301,13 +301,13 @@
                 },
                 "version": "0.0.11",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-browse-0.0.11.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-browse-0.0.11.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             },
@@ -333,13 +333,13 @@
                 },
                 "version": "0.1.0",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-browse-0.1.0.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-browse-0.1.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
                     }
                 ]
             }
@@ -367,13 +367,13 @@
                 },
                 "version": "0.0.3",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-cart-0.0.3.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-cart-0.0.3.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
                     }
                 ]
             },
@@ -399,13 +399,13 @@
                 },
                 "version": "0.0.6",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-cart-0.0.6.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-cart-0.0.6.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
                     }
                 ]
             },
@@ -431,13 +431,13 @@
                 },
                 "version": "0.0.10",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-cart-0.0.10.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-cart-0.0.10.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
             },
@@ -463,13 +463,13 @@
                 },
                 "version": "0.0.11",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-cart-0.0.11.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-cart-0.0.11.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             },
@@ -495,13 +495,13 @@
                 },
                 "version": "0.1.0",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-cart-0.1.0.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-cart-0.1.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
                     }
                 ]
             }
@@ -528,13 +528,13 @@
                 },
                 "version": "0.0.3",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-connector-0.0.3.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-connector-0.0.3.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
                     }
                 ]
             },
@@ -559,13 +559,13 @@
                 },
                 "version": "0.0.6",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-connector-0.0.6.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-connector-0.0.6.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
                     }
                 ]
             },
@@ -590,13 +590,13 @@
                 },
                 "version": "0.0.10",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-connector-0.0.10.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-connector-0.0.10.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
             },
@@ -621,13 +621,13 @@
                 },
                 "version": "0.0.11",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-connector-0.0.11.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-connector-0.0.11.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             },
@@ -652,13 +652,13 @@
                 },
                 "version": "0.1.0",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-connector-0.1.0.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-connector-0.1.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
                     }
                 ]
             }
@@ -686,13 +686,13 @@
                 },
                 "version": "0.0.3",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-contact-0.0.3.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-contact-0.0.3.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
                     }
                 ]
             },
@@ -718,13 +718,13 @@
                 },
                 "version": "0.0.6",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-contact-0.0.6.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-contact-0.0.6.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
                     }
                 ]
             },
@@ -750,13 +750,13 @@
                 },
                 "version": "0.0.10",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-contact-0.0.10.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-contact-0.0.10.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
             },
@@ -782,13 +782,13 @@
                 },
                 "version": "0.0.11",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-contact-0.0.11.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-contact-0.0.11.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             },
@@ -814,13 +814,13 @@
                 },
                 "version": "0.1.0",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-contact-0.1.0.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-contact-0.1.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
                     }
                 ]
             }
@@ -848,13 +848,13 @@
                 },
                 "version": "0.0.3",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-coupon-0.0.3.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-coupon-0.0.3.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
                     }
                 ]
             },
@@ -880,13 +880,13 @@
                 },
                 "version": "0.0.6",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-coupon-0.0.6.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-coupon-0.0.6.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
                     }
                 ]
             },
@@ -912,13 +912,13 @@
                 },
                 "version": "0.0.10",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-coupon-0.0.10.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-coupon-0.0.10.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
             },
@@ -944,13 +944,13 @@
                 },
                 "version": "0.0.11",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-coupon-0.0.11.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-coupon-0.0.11.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             },
@@ -976,13 +976,13 @@
                 },
                 "version": "0.1.0",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-coupon-0.1.0.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-coupon-0.1.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
                     }
                 ]
             }
@@ -1011,13 +1011,13 @@
                 },
                 "version": "0.0.3",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-email-0.0.3.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-email-0.0.3.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
                     }
                 ]
             },
@@ -1044,13 +1044,13 @@
                 },
                 "version": "0.0.6",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-email-0.0.6.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-email-0.0.6.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
                     }
                 ]
             },
@@ -1077,13 +1077,13 @@
                 },
                 "version": "0.0.10",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-email-0.0.10.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-email-0.0.10.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
             },
@@ -1110,13 +1110,13 @@
                 },
                 "version": "0.0.11",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-email-0.0.11.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-email-0.0.11.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             },
@@ -1143,13 +1143,13 @@
                 },
                 "version": "0.1.0",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-email-0.1.0.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-email-0.1.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
                     }
                 ]
             }
@@ -1168,13 +1168,13 @@
                 },
                 "version": "0.0.3",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-enterprise-0.0.3.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-enterprise-0.0.3.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
                     }
                 ]
             },
@@ -1191,13 +1191,13 @@
                 },
                 "version": "0.0.6",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-enterprise-0.0.6.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-enterprise-0.0.6.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
                     }
                 ]
             },
@@ -1214,13 +1214,13 @@
                 },
                 "version": "0.0.10",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-enterprise-0.0.10.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-enterprise-0.0.10.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
             },
@@ -1237,13 +1237,13 @@
                 },
                 "version": "0.0.11",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-enterprise-0.0.11.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-enterprise-0.0.11.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             },
@@ -1260,13 +1260,13 @@
                 },
                 "version": "0.1.0",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-enterprise-0.1.0.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-enterprise-0.1.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
                     }
                 ]
             }
@@ -1294,13 +1294,13 @@
                 },
                 "version": "0.0.3",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-integration-0.0.3.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-integration-0.0.3.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
                     }
                 ]
             },
@@ -1326,13 +1326,13 @@
                 },
                 "version": "0.0.6",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-integration-0.0.6.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-integration-0.0.6.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
                     }
                 ]
             },
@@ -1358,13 +1358,13 @@
                 },
                 "version": "0.0.10",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-integration-0.0.10.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-integration-0.0.10.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
             },
@@ -1390,13 +1390,13 @@
                 },
                 "version": "0.0.11",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-integration-0.0.11.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-integration-0.0.11.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             },
@@ -1422,13 +1422,13 @@
                 },
                 "version": "0.1.0",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-integration-0.1.0.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-integration-0.1.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
                     }
                 ]
             }
@@ -1456,13 +1456,13 @@
                 },
                 "version": "0.0.3",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-inventory-0.0.3.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-inventory-0.0.3.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
                     }
                 ]
             },
@@ -1488,13 +1488,13 @@
                 },
                 "version": "0.0.6",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-inventory-0.0.6.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-inventory-0.0.6.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
                     }
                 ]
             },
@@ -1520,13 +1520,13 @@
                 },
                 "version": "0.0.10",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-inventory-0.0.10.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-inventory-0.0.10.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
             },
@@ -1552,13 +1552,13 @@
                 },
                 "version": "0.0.11",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-inventory-0.0.11.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-inventory-0.0.11.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             },
@@ -1584,13 +1584,13 @@
                 },
                 "version": "0.1.0",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-inventory-0.1.0.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-inventory-0.1.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
                     }
                 ]
             }
@@ -1617,13 +1617,13 @@
                 },
                 "version": "0.0.3",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-m2-0.0.3.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-m2-0.0.3.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
                     }
                 ]
             },
@@ -1648,13 +1648,13 @@
                 },
                 "version": "0.0.6",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-m2-0.0.6.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-m2-0.0.6.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
                     }
                 ]
             },
@@ -1679,13 +1679,13 @@
                 },
                 "version": "0.0.10",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-m2-0.0.10.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-m2-0.0.10.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
             },
@@ -1710,13 +1710,13 @@
                 },
                 "version": "0.0.11",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-m2-0.0.11.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-m2-0.0.11.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             },
@@ -1741,13 +1741,13 @@
                 },
                 "version": "0.1.0",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-m2-0.1.0.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-m2-0.1.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
                     }
                 ]
             }
@@ -1774,13 +1774,13 @@
                 },
                 "version": "0.0.3",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-notification-0.0.3.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-notification-0.0.3.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
                     }
                 ]
             },
@@ -1805,13 +1805,13 @@
                 },
                 "version": "0.0.6",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-notification-0.0.6.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-notification-0.0.6.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
                     }
                 ]
             },
@@ -1836,13 +1836,13 @@
                 },
                 "version": "0.0.10",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-notification-0.0.10.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-notification-0.0.10.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
             },
@@ -1867,13 +1867,13 @@
                 },
                 "version": "0.0.11",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-notification-0.0.11.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-notification-0.0.11.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             },
@@ -1898,13 +1898,13 @@
                 },
                 "version": "0.1.0",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-notification-0.1.0.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-notification-0.1.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
                     }
                 ]
             }
@@ -1932,13 +1932,13 @@
                 },
                 "version": "0.0.3",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-optin-0.0.3.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-optin-0.0.3.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
                     }
                 ]
             },
@@ -1964,13 +1964,13 @@
                 },
                 "version": "0.0.6",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-optin-0.0.6.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-optin-0.0.6.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
                     }
                 ]
             },
@@ -1996,13 +1996,13 @@
                 },
                 "version": "0.0.10",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-optin-0.0.10.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-optin-0.0.10.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
             },
@@ -2028,13 +2028,13 @@
                 },
                 "version": "0.0.11",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-optin-0.0.11.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-optin-0.0.11.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             },
@@ -2060,13 +2060,13 @@
                 },
                 "version": "0.1.0",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-optin-0.1.0.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-optin-0.1.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
                     }
                 ]
             }
@@ -2095,13 +2095,13 @@
                 },
                 "version": "0.0.3",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-order-0.0.3.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-order-0.0.3.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
                     }
                 ]
             },
@@ -2128,13 +2128,13 @@
                 },
                 "version": "0.0.6",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-order-0.0.6.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-order-0.0.6.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
                     }
                 ]
             },
@@ -2161,13 +2161,13 @@
                 },
                 "version": "0.0.10",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-order-0.0.10.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-order-0.0.10.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
             },
@@ -2194,13 +2194,13 @@
                 },
                 "version": "0.0.11",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-order-0.0.11.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-order-0.0.11.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             },
@@ -2227,13 +2227,13 @@
                 },
                 "version": "0.1.0",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-order-0.1.0.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-order-0.1.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
                     }
                 ]
             }
@@ -2261,13 +2261,13 @@
                 },
                 "version": "0.0.3",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-product-0.0.3.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-product-0.0.3.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
                     }
                 ]
             },
@@ -2293,13 +2293,13 @@
                 },
                 "version": "0.0.6",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-product-0.0.6.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-product-0.0.6.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
                     }
                 ]
             },
@@ -2325,13 +2325,13 @@
                 },
                 "version": "0.0.10",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-product-0.0.10.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-product-0.0.10.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
             },
@@ -2357,13 +2357,13 @@
                 },
                 "version": "0.0.11",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-product-0.0.11.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-product-0.0.11.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             },
@@ -2389,13 +2389,13 @@
                 },
                 "version": "0.1.0",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-product-0.1.0.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-product-0.1.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
                     }
                 ]
             }
@@ -2423,13 +2423,13 @@
                 },
                 "version": "0.0.3",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-rating-0.0.3.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-rating-0.0.3.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
                     }
                 ]
             },
@@ -2455,13 +2455,13 @@
                 },
                 "version": "0.0.6",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-rating-0.0.6.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-rating-0.0.6.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
                     }
                 ]
             },
@@ -2487,13 +2487,13 @@
                 },
                 "version": "0.0.10",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-rating-0.0.10.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-rating-0.0.10.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
             },
@@ -2519,13 +2519,13 @@
                 },
                 "version": "0.0.11",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-rating-0.0.11.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-rating-0.0.11.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             },
@@ -2551,13 +2551,13 @@
                 },
                 "version": "0.1.0",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-rating-0.1.0.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-rating-0.1.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
                     }
                 ]
             }
@@ -2585,13 +2585,13 @@
                 },
                 "version": "0.0.3",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-redemption-0.0.3.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/oracle-magento-module-redemption-0.0.3.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.3/packages.json"
                     }
                 ]
             },
@@ -2617,13 +2617,13 @@
                 },
                 "version": "0.0.6",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-redemption-0.0.6.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/oracle-magento-module-redemption-0.0.6.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.6/packages.json"
                     }
                 ]
             },
@@ -2649,13 +2649,13 @@
                 },
                 "version": "0.0.10",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-redemption-0.0.10.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/oracle-magento-module-redemption-0.0.10.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.10/packages.json"
                     }
                 ]
             },
@@ -2681,13 +2681,13 @@
                 },
                 "version": "0.0.11",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-redemption-0.0.11.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/oracle-magento-module-redemption-0.0.11.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.0.11/packages.json"
                     }
                 ]
             },
@@ -2713,13 +2713,13 @@
                 },
                 "version": "0.1.0",
                 "dist": {
-                    "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-redemption-0.1.0.zip",
+                    "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/oracle-magento-module-redemption-0.1.0.zip",
                     "type": "zip"
                 },
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/oracle/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
                     }
                 ]
             }
