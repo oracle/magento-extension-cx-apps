@@ -177,7 +177,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/blob/main/packages.json"
                     }
                 ]
             }
@@ -339,7 +339,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/blob/main/packages.json"
                     }
                 ]
             }
@@ -501,7 +501,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/blob/main/packages.json"
                     }
                 ]
             }
@@ -658,7 +658,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/blob/main/packages.json"
                     }
                 ]
             }
@@ -820,7 +820,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/blob/main/packages.json"
                     }
                 ]
             }
@@ -982,7 +982,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/blob/main/packages.json"
                     }
                 ]
             }
@@ -1149,7 +1149,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/blob/main/packages.json"
                     }
                 ]
             }
@@ -1428,7 +1428,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/blob/main/packages.json"
                     }
                 ]
             }
@@ -1590,7 +1590,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/blob/main/packages.json"
                     }
                 ]
             }
@@ -1747,7 +1747,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/blob/main/packages.json"
                     }
                 ]
             }
@@ -1904,7 +1904,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/blob/main/packages.json"
                     }
                 ]
             }
@@ -2066,7 +2066,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/blob/main/packages.json"
                     }
                 ]
             }
@@ -2233,7 +2233,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/blob/main/packages.json"
                     }
                 ]
             }
@@ -2395,7 +2395,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/blob/main/packages.json"
                     }
                 ]
             }
@@ -2557,7 +2557,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/blob/main/packages.json"
                     }
                 ]
             }
@@ -2719,7 +2719,7 @@
                 "repositories": [
                     {
                         "type": "composer",
-                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/releases/download/0.1.0/packages.json"
+                        "url": "https://github.com/sai-krishna-kota/magento-extension-cx-apps/blob/main/packages.json"
                     }
                 ]
             }
