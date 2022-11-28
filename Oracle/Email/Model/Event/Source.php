@@ -32,7 +32,7 @@ class Source implements \Oracle\M2\Connector\Event\SourceInterface
     public function transform($message)
     {
         $headers = $message->getHeaders();
-        if ($headers instanceof \Zend\Mail\Headers) {
+        if ($headers instanceof \Laminas\Mail\Headers) {
             $fromHeader = $headers->get('From') ? $headers->get('From')->toString() : '';
         } else {
             $fromHeader = is_array($headers['From']) ? implode(' ', $headers['From']) : $headers['From'];
@@ -47,7 +47,7 @@ class Source implements \Oracle\M2\Connector\Event\SourceInterface
                 $fromName = isset($messageFrom['name']) ? $messageFrom['name'] : $fromEmail;
         }
 
-        // If $fromHeader came from a Zend\Mail\Header\From instance it will have 'From: ' prepended. We want to strip
+        // If $fromHeader came from a Laminas\Mail\Header\From instance it will have 'From: ' prepended. We want to strip
         // that out of the fromName if it's there, along with any <emailaddress> part.
         if (preg_match('/(?:^From:)?([^<]+)/s', $fromHeader, $matches)) {
             $fromName = trim($matches[1]);

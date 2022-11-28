@@ -15,7 +15,7 @@ use Oracle\Connector\Model\ResourceModel\Tid\CollectionFactory;
 use Oracle\Connector\Model\Spi\TidResourceInterface;
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Phrase;
-use Zend\Loader\Exception\DomainException;
+use Laminas\Loader\Exception\DomainException;
 
 /**
  * Class TidRepository
