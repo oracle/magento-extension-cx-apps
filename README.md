@@ -77,7 +77,7 @@ This command will get the specified component from the mentioned repositories ur
 ```composer log
   ./bin/magento cache:flush
 ```
-Following above step will install the Magento extension. Post this follow
+Following above steps will install the Magento extension. Post this follow
 instruction from the CX Apps help page to establish connection.
 
 ## Documentation
