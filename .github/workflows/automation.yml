@@ -273,10 +273,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run:  |
-          sudo apt -y install software-properties-common
-          sudo add-apt-repository ppa:ondrej/php
-          sudo apt-get update
-          sudo apt -y install php7.4
           sudo update-alternatives --set php /usr/bin/php7.4
           php -v
           php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
