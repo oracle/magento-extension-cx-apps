@@ -278,6 +278,7 @@ jobs:
           sudo apt-get update
           sudo apt -y install php7.4
           sudo apt-get install -y php7.4-xml
+          echo 'extension=yaml.so' >> /etc/php/7.4/cli/php.ini
           sudo apt-get install -y php-pear libyaml-dev
           sudo pecl install yamL
           sudo update-alternatives --set php /usr/bin/php7.4
