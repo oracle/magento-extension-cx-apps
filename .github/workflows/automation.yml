@@ -270,19 +270,14 @@ jobs:
       - name: Add HTTP basic auth credentials
         run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
 
+      - name: Setup PHP with specific version of PECL extension
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run:  |
-          sudo apt -y install software-properties-common
-          sudo add-apt-repository ppa:ondrej/php
-          sudo apt-get update
-          sudo apt -y install php7.4
-          sudo apt-get install -y php7.4-xml
-          echo 'printing php path'
-          command -v php
-          echo 'extension=yaml.so' >> /etc/php/7.4/cli/php.ini
-          sudo apt-get install -y php-pear libyaml-dev
-          sudo pecl install yamL
           sudo update-alternatives --set php /usr/bin/php7.4
           php -v
           php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
